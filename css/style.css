@@ -1,0 +1,594 @@
+/* Estilos generales */
+:root {
+    --primary-color: #6c63ff;
+    --secondary-color: #4d44db;
+    --dark-color: #333;
+    --light-color: #f4f4f4;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--dark-color);
+}
+
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark-color);
+}
+
+ul {
+    list-style: none;
+}
+
+.btn-primary {
+    display: inline-block;
+    background: var(--primary-color);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: var(--secondary-color);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.btn-secondary {
+    display: inline-block;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+.btn-login {
+    display: inline-block;
+    color: var(--primary-color);
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 2px solid var(--primary-color);
+}
+
+.btn-login:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+.highlight {
+    color: var(--primary-color);
+}
+
+/* Header */
+header {
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+nav ul li.current a {
+    color: var(--primary-color);
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(135deg, #6c63ff 0%, #4d44db 100%);
+    color: white;
+    padding: 180px 0 100px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+/* Cursos destacados */
+.cursos-destacados {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.cursos-destacados h2 {
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.cursos-destacados h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: var(--primary-color);
+    margin: 15px auto 0;
+}
+
+.cursos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.curso-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.curso-card:hover {
+    transform: translateY(-10px);
+}
+
+.curso-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.curso-card h3 {
+    padding: 20px 20px 10px;
+    font-size: 1.3rem;
+}
+
+.curso-card p {
+    padding: 0 20px 20px;
+    color: #666;
+}
+
+.curso-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 20px;
+    align-items: center;
+}
+
+.precio {
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+.duracion {
+    color: #666;
+}
+
+/* Cómo funciona */
+.como-funciona {
+    padding: 80px 0;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.como-funciona h2 {
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.como-funciona h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: var(--primary-color);
+    margin: 15px auto 0;
+}
+
+.pasos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.paso {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.paso-numero {
+    width: 50px;
+    height: 50px;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 auto 20px;
+}
+
+.paso h3 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+/* Testimonios */
+.testimonios {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.testimonios h2 {
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.testimonios h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: var(--primary-color);
+    margin: 15px auto 0;
+}
+
+.testimonios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.testimonio-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    text-align: left;
+}
+
+.testimonio-texto {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.testimonio-texto::before {
+    content: '"';
+    font-size: 4rem;
+    color: var(--primary-color);
+    opacity: 0.2;
+    position: absolute;
+    top: -20px;
+    left: -10px;
+}
+
+.testimonio-autor {
+    display: flex;
+    align-items: center;
+}
+
+.testimonio-autor img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.testimonio-autor h4 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.testimonio-autor span {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+/* CTA */
+.cta {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #6c63ff 0%, #4d44db 100%);
+    color: white;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    padding: 60px 0 0;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.footer-col h3 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-col h3::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: var(--primary-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-col p {
+    margin-bottom: 20px;
+    color: #bbb;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: #bbb;
+    transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: white;
+}
+
+.footer-col ul li i {
+    margin-right: 10px;
+    color: var(--primary-color);
+    width: 20px;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    background: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #bbb;
+    font-size: 0.9rem;
+}
+
+.footer-links a {
+    color: #bbb;
+    margin-left: 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        padding: 15px 0;
+    }
+
+    .logo {
+        margin-bottom: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0 10px 10px;
+    }
+
+    .hero {
+        padding: 150px 0 80px;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .pasos {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links {
+        margin-top: 15px;
+    }
+
+    .footer-links a {
+        margin: 0 10px;
+    }
+}
+
+/* Estilos para todos los cursos */
+.main-curso {
+    padding: 40px 0;
+    background-color: #f5f7fa;
+}
+
+.curso-container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.video-intro {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+    background: #000;  /* Fondo negro para mejor contraste */
+    padding: 15px 0;
+    border-radius: 10px;
+}
+
+.video-intro video {
+    max-width: 90%;
+    height: auto;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    border: 2px solid #16a085; /* Color corporativo */
+}
+
+/* Estilos para móvil */
+@media (max-width: 768px) {
+    .video-intro {
+        margin: 15px -20px; /* Sangrado completo */
+        border-radius: 0;
+        padding: 10px 0;
+    }
+    
+    .video-intro video {
+        max-width: 100%;
+        border: none;
+    }
+}
+/* Resto de los estilos específicos para energía-solar.html pueden mantenerse ahí */
+/* Opción 1: Estilo para la imagen directamente */
+.imagen-boton {
+    width: 200px; /* Ancho deseado */
+    height: auto; /* Mantiene la proporción */
+    cursor: pointer; /* Cambia el cursor al pasar */
+    border: 2px solid #ddd; /* Borde opcional */
+    border-radius: 8px; /* Esquinas redondeadas */
+    transition: all 0.3s ease; /* Efecto de transición */
+    display: block; /* Para mejor control */
+  }
+  
+  .imagen-boton:hover {
+    transform: scale(1.05); /* Efecto de crecimiento al pasar el mouse */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra al pasar */
+  }
+  
+  /* Opción 2: Si usaste el enlace <a> contenedor */
+  a.imagen-boton {
+    display: inline-block;
+    padding: 0;
+    border: none;
+  }
+  
+  a.imagen-boton img {
+    width: 100%;
+    height: 50%;
+    display: block;
+  }

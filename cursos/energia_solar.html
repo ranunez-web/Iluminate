@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Energía Solar Residencial | Iluminate</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        /* Estilos específicos para este curso */
+        .curso-container {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .curso-menu {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            align-self: start;
+            position: sticky;
+            top: 20px;
+        }
+        
+        .curso-menu h3 {
+            color: #2c3e50;
+            border-bottom: 2px solid #16a085;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        
+        .curso-menu ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .curso-menu li {
+            margin-bottom: 10px;
+        }
+        
+        .curso-menu a {
+            display: block;
+            padding: 8px 12px;
+            color: #2980b9;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        
+        .curso-menu a:hover, .curso-menu a.active {
+            background-color: #16a085;
+            color: white;
+        }
+        
+        .curso-contenido {
+            background: white;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .modulo {
+            margin-bottom: 40px;
+        }
+        
+        .modulo h2 {
+            color: #16a085;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .curso-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .curso-menu {
+                position: static;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Aquí iría el mismo header que en el resto del sitio -->
+    </header>
+
+    <main class="main-curso">
+        <div class="curso-container">
+            <aside class="curso-menu">
+                <h3>SISTEMA DE ENERGÍA SOLAR RESIDENCIAL</h3>
+                <p><em>Instalación y mantenimiento</em></p>
+                
+                <h4>MODULO 1:</h4>
+                <ul>
+                    <li><a href="#introduccion" class="active">INTRODUCCIÓN</a></li>
+                    <li><a href="#ventajas">VENTAJAS</a></li>
+                </ul>
+                
+                <h4>MODULO 2:</h4>
+                <ul>
+                    <li><a href="#tipos-paneles">TIPOS DE PANELES SOLARES</a></li>
+                </ul>
+
+                <h4>REGRESAR </h4>
+                <ul>
+                    <li><a href="../index.html">PAGINA PRINCIPAL</a></li>
+                </ul>
+            </aside>
+            
+            <article class="curso-contenido">
+                <section id="introduccion" class="modulo">
+                    <h1>INTRODUCCIÓN</h1>
+                    <!-- Contenedor del video centrado - versión final -->
+                    <div class="video-intro">
+                        <video controls width="800" poster="../images/video-poster.jpg">
+                            <source src="../videos/video1.mp4" type="video/mp4">
+                            <track kind="captions" src="../videos/captions.vtt" srclang="es" label="Español">
+                            Su navegador no soporta videos HTML5. Descargue el <a href="../videos/video1.mp4">video aquí</a>.
+                        </video>
+                    </div>
+                    <p>Poco a poco, nos hemos acostumbrado a ver paneles fotovoltaicos instalados en los tejados de casas, edificios, en techos de cocheras o incluso en el suelo, para producir electricidad limpia a partir de la luz solar. El uso de paneles fotovoltaicos, especialmente en tiempos de crisis energética, nos permite reducir las emisiones de CO2 y depender menos de los combustibles fósiles, al tiempo que se reducen los costes.</p>
+                    
+                    <h2>Cómo son los paneles fotovoltaicos</h2>
+                    <p>Un panel fotovoltaico se compone de unidades llamadas células, generalmente de un material semiconductor como el silicio al que se añaden átomos de otros elementos como boro y fósforo. Las células se colocan unas junto a otras en una superficie plana y se conectan entre sí. Para proteger este sistema, se monta una cubierta de vidrio especial tratado de tal manera que garantiza obtener el máximo rendimiento energético.</p>
+                    
+                    <p>La conversión de los rayos del sol en energía eléctrica tiene lugar en el interior de las células fotovoltaicas: los fotones de la luz solar que inciden sobre el silicio –al que se han añadido los demás elementos– provocan la liberación de electrones, produciendo así una corriente eléctrica continua. Como en los hogares se utiliza corriente alterna, es necesario instalar con estas células un dispositivo llamado inversor, que convierte la corriente continua en corriente alterna.</p>
+                    
+                    <p>Hoy en día en busca de una mayor eficiencia, los paneles fotovoltaicos se fabrican mucho más ligeros, han reducido su peso hasta los 11 kg por metro cuadrados, algo favorable para los tejados donde son ubicados y también porque facilita su transporte e instalación.</p>
+                </section>
+                
+                <section id="ventajas" class="modulo">
+                    <h1>VENTAJAS</h1>
+                    <!-- Contenedor del video centrado - versión final -->
+                    <div class="video-intro">
+                        <video controls width="800" poster="../images/video-poster.jpg">
+                            <source src="../videos/video2.mp4" type="video/mp4">
+                            <track kind="captions" src="../videos/captions.vtt" srclang="es" label="Español">
+                            Su navegador no soporta videos HTML5. Descargue el <a href="../videos/video2.mp4">video aquí</a>.
+                        </video>
+                    </div>
+                    <p>La popularidad de la energía solar se ha incrementado en los últimos años, esto es por ser una fuente de energía limpia, renovable y abundante. Cada vez más hogares optan por migrar a sistemas de energía solar debido a los numerosos beneficios que esta nos ofrece:</p>
+                    
+                    <h2>1. Ahorro en costos de energía</h2>
+                    <p>Uno de los principales beneficios de la energía solar es la reducción de costos de energía a largo plazo. Al generar tu propia electricidad a través de paneles solares, puedes disminuir o incluso eliminar tu dependencia de la red eléctrica tradicional.</p>
+                    
+                    <h2>2. Energía sostenible y respetuosa con el medio ambiente</h2>
+                    <p>La energía solar es una fuente de energía renovable y limpia que al ser utilizada, reducimos nuestra dependencia de los combustibles fósiles y las emisiones de gases de efecto invernadero contribuyendo así a la lucha contra el cambio climático y la preservación del medio ambiente.</p>
+                    
+                    <h2>3. Aprovechamiento de los recursos locales</h2>
+                    <p>El sol es una fuente de energía disponible para todo el mundo. Al instalar paneles solares en tu hogar, aprovechas un recurso gratuito reduciendo la necesidad de importar energía de otras regiones.</p>
+
+                    <h2>4. Valorización de la propiedad</h2>
+                    <p>La instalación de un sistema de energía solar puede aumentar el valor de tu propiedad. Los estudios demuestran que las casas equipadas con paneles solares se venden a un precio más alto y se venden más rápido que aquellas sin energía solar.</p>
+                
+                    <h2>5. Independencia energética</h2>
+                    <p>Al generar tu propia electricidad con energía solar, te vuelves menos dependiente de la red eléctrica. Esto es especialmente útil en áreas propensas a cortes de energía, ya que puedes mantener el suministro eléctrico incluso durante interrupciones.</p>
+                
+                    <h2>6. Durabilidad y bajo mantenimiento</h2>
+                    <p>Los paneles solares son duraderos y requieren poco mantenimiento. La mayoría de los fabricantes ofrecen garantías de 25 a 30 años, lo que demuestra la confiabilidad de esta tecnología. Además, la limpieza regular de los paneles solares es simple y no requiere esfuerzos significativos.</p>
+                
+                    <h2>7. Flexibilidad de instalación</h2>
+                    <p>Los paneles solares pueden instalarse en una variedad de lugares, desde techos hasta estructuras independientes en el patio trasero. Además, existen diferentes tipos de paneles solares, lo que te permite elegir la opción que mejor se adapte a tus necesidades y espacio disponible.</p>
+                
+                    <h2>8. Generación de empleo local</h2>
+                    <p>La transición hacia la energía solar impulsa la creación de empleo en el sector de las energías renovables. La instalación y mantenimiento de sistemas de energía solar requieren mano de obra especializada, lo que contribuye a la economía local.</p>
+                
+                </section>
+                
+                <section id="tipos-paneles" class="modulo">
+                    <h1>¿QUÉ TIPOS DE PANELES SOLARES EXISTEN?</h1>
+                    <div class="video-intro">
+                        <video controls width="800" poster="../images/video-poster.jpg">
+                            <source src="../videos/video3.mp4" type="video/mp4">
+                            <track kind="captions" src="../videos/captions.vtt" srclang="es" label="Español">
+                            Su navegador no soporta videos HTML5. Descargue el <a href="../videos/video3.mp4">video aquí</a>.
+                        </video>
+                    </div>
+                    <p>Podemos distinguir tres tipos de placas solares: </p>
+                 
+                    <h2>Paneles solares fotovoltaicos</h2>
+                    <p>Los paneles solares fotovoltaicos son los más comunes. Funcionan mediante la conversión directa de la luz solar en electricidad. Están compuestos por celdas fotovoltaicas, generalmente de silicio, que generan una corriente continua cuando la luz solar incide sobre ellas.
+                        Son los más usados para la generación de electricidad en edificios residenciales, comerciales e industriales. Estos paneles se pueden instalar en techos, terrenos o estructuras especiales conocidas como seguidores solares, de una forma sencilla.
+                    </p>
+                    <h2>Según la tecnología que utilizan podemos distinguir tres tipos de paneles solares fotovoltaicos: </h2>
+                    <h3>Placas solares monocristalinas.</h3>
+                    <p>Fabricadas en silicio de alta pureza, es el tipo de panel solar que ofrece una mayor eficiencia, entre el 15 % y el 20 %. Sus principales ventajas son su potencia, su larga vida útil y su tamaño, ideal para viviendas. </p>
+                    <h3>Placas solares policristalinas. </h3>
+                    <p>Reconocibles por su característico color azul, se fabrican con silicio en bruto y son más asequibles, aunque menos eficientes, alrededor del 15 %. Aunque tienen potencia similar a las anteriores, ocupan más espacio y son sensibles al calor, por lo que no se recomiendan para climas muy cálidos. </p>
+                    <h3>Placas solares amorfas o de capa fina</h3>
+                    <p>Emplean materiales como silicio amorfo, telururo de cadmio o galio, lo que las hace flexibles y ligeras. Su eficiencia es menor, alrededor del 7-10 %, y tienen una vida útil más corta. Sin embargo, su precio más bajo hace que este tipo de panel solar sea muy utilizado en grandes instalaciones públicas o industrias.  </p>
+                
+                
+                    <h2>Paneles solares térmicos</h2>
+                    <p>Los paneles solares térmicos, a diferencia de los fotovoltaicos, están diseñados para convertir la radiación solar en calor o energía térmica. Se suelen usar para calentar el agua doméstica, para generar agua caliente sanitaria, climatizar la vivienda o para calentar una piscina, entre otros muchos usos. En este curso solo haremos esta breve reseña sobre ellos.</p>
+                
+                    <h2>Paneles solares híbridos </h2>
+                    <p>Los paneles solares híbridos combinan la tecnología fotovoltaica y térmica en un solo panel. Este tipo de paneles solares aprovechan al máximo la energía solar, generando electricidad y produciendo calor al mismo tiempo, lo que hace que sean altamente eficaces.</p>
+                
+                </section>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Aquí iría el mismo footer que en el resto del sitio -->
+    </footer>
+
+    <script>
+        // Script para resaltar la sección activa en el menú
+        document.querySelectorAll('.curso-menu a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                document.querySelectorAll('.curso-menu a').forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+        
+        // Script para detectar qué sección está visible y resaltarla en el menú
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('.modulo');
+            const navLinks = document.querySelectorAll('.curso-menu a');
+            
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (pageYOffset >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
